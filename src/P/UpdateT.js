@@ -230,27 +230,27 @@ const UpdateT = () => {
           estimatedDelivery: inputs.estimatedDelivery,
           locationOne: {
             location: locationOne.location,
-            isThere: locationOne.isThere === "true" ? true : false,
+            isThere: locationOne.isThere === "true" ? "true" : "false",
             date: locationOne.date,
           },
           locationTwo: {
             location: locationTwo.location,
-            isThere: locationTwo.isThere === "true" ? true : false,
+            isThere: locationTwo.isThere === "true" ? "true" : "false",
             date: locationTwo.date,
           },
           locationThree: {
             location: locationThree.location,
-            isThere: locationThree.isThere,
+            isThere: locationThree.isThere === "true" ? "true" : "false",,
             date: locationThree.date,
           },
           locationFour: {
             location: locationFour.location,
-            isThere: locationFour.isThere,
+            isThere: locationFour.isThere === "true" ? "true" : "false",,
             date: locationFour.date,
           },
           locationFive: {
             location: locationFive.location,
-            isThere: locationFive.isThere,
+            isThere: locationFive.isThere === "true" ? "true" : "false",,
             date: locationFive.date,
           },
           address: inputs.address,
