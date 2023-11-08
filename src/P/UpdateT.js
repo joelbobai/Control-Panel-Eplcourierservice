@@ -268,7 +268,43 @@ const UpdateT = () => {
 
     if (res) {
       const data = await res?.data;
-      // console.log(data);
+       console.log(data);
+        console.log( {
+          _id: trackingInfo._id,
+          trackingId: inputs.trackingId,
+          orderDate: inputs.orderDate,
+          estimatedDelivery: inputs.estimatedDelivery,
+          locationOne: {
+            location: locationOne.location,
+            isThere: locationOne.isThere,
+            date: locationOne.date,
+          },
+          locationTwo: {
+            location: locationTwo.location,
+            isThere: locationTwo.isThere,
+            date: locationTwo.date,
+          },
+          locationThree: {
+            location: locationThree.location,
+            isThere: locationThree.isThere,
+            date: locationThree.date,
+          },
+          locationFour: {
+            location: locationFour.location,
+            isThere: locationFour.isThere,
+            date: locationFour.date,
+          },
+          locationFive: {
+            location: locationFive.location,
+            isThere: locationFive.isThere,
+            date: locationFive.date,
+          },
+          address: inputs.address,
+          discount: inputs.discount,
+          delivery: inputs.delivery,
+          tax: inputs.tax,
+          total: inputs.total,
+        });
       return data;
     }
   };
