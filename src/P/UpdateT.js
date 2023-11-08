@@ -235,7 +235,7 @@ const UpdateT = () => {
           },
           locationTwo: {
             location: locationTwo.location,
-            isThere: locationTwo.isThere,
+            isThere: locationTwo.isThere === "true" ? true : false,
             date: locationTwo.date,
           },
           locationThree: {
